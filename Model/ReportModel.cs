@@ -1,4 +1,4 @@
-﻿namespace Model
+﻿namespace Models
 {
     public class ReportModel
     {
@@ -15,6 +15,6 @@
             public string priority { get; set; }
             public string status { get; set; }
             public string notes { get; set; }
-            public string attachment { get; set; }
+            // public string attch { get; set; }
     }
 }

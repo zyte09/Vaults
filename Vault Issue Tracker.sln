@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault Issue Tracker", "Vault Issue Tracker\Vault Issue Tracker.csproj", "{F2EB7878-FE49-40DC-96E0-24736FF83E0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vault Issue Tracker", "Vault Issue Tracker\Vault Issue Tracker.csproj", "{F2EB7878-FE49-40DC-96E0-24736FF83E0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Manager\Manager.csproj", "{B9591F58-ED5D-4B76-96A7-44F4469A80AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "Manager\Manager.csproj", "{B9591F58-ED5D-4B76-96A7-44F4469A80AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{64AFFF26-5155-4D21-AAE6-261FC63C25D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{64AFFF26-5155-4D21-AAE6-261FC63C25D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
