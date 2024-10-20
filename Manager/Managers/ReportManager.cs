@@ -4,7 +4,7 @@ using static Model.ReportModel;
 namespace Manager.Managers
 {
     public class ReportManager : IReportService
-    { 
+    {
         // Temp Data
         private readonly List<Report> _reports = new List<Report>
         {
