@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Model.ReportModel;
+using static Models.Model;
 
 namespace Manager.Services
 {

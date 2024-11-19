@@ -1,15 +1,15 @@
 ﻿using Manager.Services;
-using static Model.ReportModel;
+using static Models.Model;
 
 namespace Manager.Managers
 {
     public class ReportManager : IReportService
     {
         // Temp Data
-        private readonly List<Report> _reports = new List<Report>
-        {
-            new Report { userId = 1, userName = "Vault", emai = "mail@mail.cs", password = "123", role = "Developer", reportId = 1, reportTitle = "Lorem Ipsum", reportDescription = "Dolor", priority = "High", status = "Open", notes = "Testing"}
-        };
+        //private readonly List<Report> _reports = new List<Report>
+        //{
+        //    new Report { userId = 1, userName = "Vault", emai = "mail@mail.cs", password = "123", role = "Developer", reportId = 1, reportTitle = "Lorem Ipsum", reportDescription = "Dolor", priority = "High", status = "Open", notes = "Testing"}
+        //};
 
         // Function to display the list of reports
         public IEnumerable<Report> GetAllReports()
