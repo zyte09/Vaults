@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Models.Model;
+using Manager;
 
 namespace Manager.Services
 {
-    internal class IReportService
+    public class IReportService
     {
         IEnumerable<Report> GetAllReports();
-        Report GetReportsById(int id);
+        private Report GetReportsById(int id);
         void AddReport(Report report);
         void UpdateReport(int id, Report report);
         void DeleteReport(int id);

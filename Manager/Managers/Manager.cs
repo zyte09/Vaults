@@ -3,13 +3,13 @@ using static Models.Model;
 
 namespace Manager.Managers
 {
-    public class ReportManager : IReportService
+    public class Manager : IReportService
     {
         // Temp Data
-        //private readonly List<Report> _reports = new List<Report>
-        //{
-        //    new Report { userId = 1, userName = "Vault", emai = "mail@mail.cs", password = "123", role = "Developer", reportId = 1, reportTitle = "Lorem Ipsum", reportDescription = "Dolor", priority = "High", status = "Open", notes = "Testing"}
-        //};
+        private readonly List<Report> _reports = new List<Report>
+        {
+            new Report { reportId = 1, userId = 1, reportTitle = "Lorem Ipsum", reportDescription = "Dolor", priority = "High", status = "Open", notes = "Testing"}
+        };
 
         // Function to display the list of reports
         public IEnumerable<Report> GetAllReports()
@@ -20,7 +20,7 @@ namespace Manager.Managers
         // Function to display the details of the report if there is a matching id
         public Report GetReportsById(int id)
         {
-            return _reports.FirstOrDefault(r => r.id == id);
+            return _reports.FirstOrDefault(r => r.reportId == id);
         }
 
         // Function that displays adds a reports to the list
@@ -31,7 +31,7 @@ namespace Manager.Managers
         }
 
         //Function that update a report's information if it exists
-        public void UpdateReport(int id, ReportManager report)
+        public void UpdateReport(int id, Manager report)
         {
             var existingReport = _reports.FirstOrDefault(r => r.Id == id);
             if (existingReport != null)
