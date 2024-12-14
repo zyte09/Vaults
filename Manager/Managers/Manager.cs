@@ -23,29 +23,32 @@ namespace Manager.Managers
             return _reports.FirstOrDefault(r => r.reportId == id);
         }
 
-        // Function that displays adds a reports to the list
+        // Function that adds a report to the list
         public void AddReport(Report report)
         {
-            report.reportId = _reports.Max(r => r.id) + 1;
+            report.reportId = _reports.Max(r => r.reportId) + 1;
             _reports.Add(report);
         }
 
-        //Function that update a report's information if it exists
-        public void UpdateReport(int id, Manager report)
+        // Function that updates a report's information if it exists
+        public void UpdateReport(int id, Report report)
         {
-            var existingReport = _reports.FirstOrDefault(r => r.Id == id);
+            var existingReport = _reports.FirstOrDefault(r => r.reportId == id);
             if (existingReport != null)
             {
-                existingReport.reportId = id;
-                existingReport.reportTitle = reportTitle;
+                existingReport.reportTitle = report.reportTitle;
+                existingReport.reportDescription = report.reportDescription;
+                existingReport.priority = report.priority;
+                existingReport.status = report.status;
+                existingReport.notes = report.notes;
             }
         }
 
         // Function that deletes a report from the list
         public void DeleteReport(int id)
         {
-            var report = _reports.FirstOrDefault(s => s.Id == id);
-            if (report!= null)
+            var report = _reports.FirstOrDefault(s => s.reportId == id);
+            if (report != null)
             {
                 _reports.Remove(report);
             }

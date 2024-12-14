@@ -8,12 +8,12 @@ using Manager;
 
 namespace Manager.Services
 {
-    public class IReportService
+    public interface IReportService
     {
-        IEnumerable<Report> GetAllReports();
-        private Report GetReportsById(int id);
         void AddReport(Report report);
-        void UpdateReport(int id, Report report);
         void DeleteReport(int id);
+        IEnumerable<Report> GetAllReports();
+        Report GetReportsById(int id);
+        void UpdateReport(int id, Report report);
     }
 }
